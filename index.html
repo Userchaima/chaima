@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salaire Net TN</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Salaire Net TN</h1>
+        <ul>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="calculateur">
+        <h2>Calculez votre Salaire Net en Tunisie 2025</h2>
+        <p>
+          Calculer votre rémunération nette en fonction de votre salaire brut en
+          un clic.
+        </p>
+
+        <div class="formulaire">
+          <input type="number" id="brut" placeholder="Salaire brut" />
+          <button onclick="calculer()">Calculer</button>
+        </div>
+
+        <div id="resultat" class="resultat"></div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>Contactez-nous</h2>
+        <form
+          action="https://formsubmit.co/chafiichaima729@gmail.com"
+          method="post"
+        >
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_subject" value="New submission!" />
+          <input
+            type="hidden"
+            name="_next"
+            value="merci.html"
+          />
+          <input type="text" name="name" placeholder="Votre nom" required />
+          <input type="email" name="email" placeholder="Votre email" required />
+          <textarea
+            name="message"
+            placeholder="Votre message"
+            rows="5"
+            required
+          ></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
